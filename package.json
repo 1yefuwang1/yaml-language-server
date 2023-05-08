@@ -1,24 +1,16 @@
 {
-  "name": "yaml-language-server",
+  "name": "@1yefuwang1/yaml-language-server",
   "description": "YAML language server",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "author": "Gorkem Ercan (Red Hat)",
   "license": "MIT",
   "contributors": [
-    {
-      "name": "Joshua Pinkney",
-      "email": "joshpinkney@gmail.com"
-    },
-    {
-      "name": "Yevhen Vydolob",
-      "email": "yvydolob@redhat.com"
-    },
-    {
-      "name": "Google LLC"
-    }
+    "Joshua Pinkney <joshpinkney@gmail.com>",
+    "Yevhen Vydolob <yvydolob@redhat.com>",
+    "Google LLC"
   ],
   "bin": {
-    "yaml-language-server": "./bin/yaml-language-server"
+    "yaml-language-server": "bin/yaml-language-server"
   },
   "main": "./out/server/src/index.js",
   "keywords": [
@@ -27,7 +19,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/redhat-developer/yaml-language-server.git"
+    "url": "git+https://github.com/redhat-developer/yaml-language-server.git"
   },
   "optionalDependencies": {
     "prettier": "2.0.5"
@@ -99,5 +91,14 @@
       "scripts"
     ],
     "all": true
+  },
+  "types": "./out/server/src/index.d.ts",
+  "bugs": {
+    "url": "https://github.com/redhat-developer/yaml-language-server/issues"
+  },
+  "homepage": "https://github.com/redhat-developer/yaml-language-server#readme",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
   }
 }
