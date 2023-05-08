@@ -1,6 +1,7 @@
 ![CI](https://github.com/redhat-developer/yaml-language-server/workflows/CI/badge.svg) [![Build Status](https://travis-ci.org/redhat-developer/yaml-language-server.svg?branch=main)](https://travis-ci.org/redhat-developer/yaml-language-server) [![version](https://img.shields.io/npm/v/yaml-language-server.svg)](https://www.npmjs.com/package/yaml-language-server) [![Coverage Status](https://coveralls.io/repos/github/redhat-developer/yaml-language-server/badge.svg?branch=main)](https://coveralls.io/github/redhat-developer/yaml-language-server?branch=main)
 
 # YAML Language Server
+Note: this is a fork of [yaml-language-server](https://github.com/redhat-developer/yaml-language-server) v1.7.0 with yaml bumped to 2.2.2 to fix [CVE-2023-2251](https://github.com/advisories/GHSA-f9xv-q969-pqx4).
 
 Supports JSON Schema 7 and below.
 Starting from `1.0.0` the language server uses [eemeli/yaml](https://github.com/eemeli/yaml) as the new YAML parser, which strictly enforces the specified YAML spec version. Default YAML spec version is `1.2`, it can be changed with `yaml.yamlVersion` setting.
